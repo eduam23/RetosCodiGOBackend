@@ -40,6 +40,6 @@ def pais(request):
     data = []
     for pais in lstPaises:
         data.append({
-            'nombre': pais.numero
+            'nombre': pais.nombre
         })
     return JsonResponse(data, safe=False)
